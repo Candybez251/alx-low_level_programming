@@ -6,7 +6,7 @@
  * main - a program that prints the last digit of a number
  * and whether it is greater than 5,less than6, or 0.
  *
- * Return (0)
+ * Return: Always 0.
  */
 int main(void)
 {
