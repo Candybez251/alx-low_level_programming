@@ -1,6 +1,5 @@
 #include <stdlb.h>
 #include <time.h>
-#include <stdio.h>
 
 /**
  * main - a program that prints the last digit of a number
