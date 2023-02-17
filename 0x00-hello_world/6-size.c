@@ -3,7 +3,7 @@
 /**
  * main - starting or entry point
  * Description: a C program that prints the size of various types
- * Return 0
+ * Return: 0
  */
 
 int main(void)
