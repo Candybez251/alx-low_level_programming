@@ -1,7 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-int _issuper(int c);
+int _isuper(int c);
 int _isdigit(int c);
 int mul(int a, int b);
 int print_numbers(void);
