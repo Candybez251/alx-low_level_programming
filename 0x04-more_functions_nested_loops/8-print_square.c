@@ -4,23 +4,22 @@
  * print_square - prints hashes squares.
  * @size: size of the square
  */
+
 void print_square(int size)
 {
-	if (size <= 0)
-	{
-		_putchar('\n');
-	}
-	else
-	{
-		int i, j;
+	int i = 0, sq;
 
-		for (i = 0; i < size; i++)
+	while (i < size && size > 0)
+	{
+		sq = 0;
+		while (sq < size)
 		{
-			for (j = 0; j < size; j++)
-			{
-				_putchar('#');
-			}
-			_putchar('\n');
+			_putchar('#');
+			sq++;
 		}
+		_putchar('\n');
+		i++;
 	}
+	if (i == 0)
+		_putchar('\n');
 }
