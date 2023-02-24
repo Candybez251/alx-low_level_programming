@@ -8,26 +8,23 @@
 
 void more_numbers(void)
 {
-	char number, store_num;
-	int numx10;
+	char i, store_num;
+	int num;
 
-	numx10 = 0;
-	while (numx10 < 10)
+	num = 0;
+	while (num < 10)
 	{
-		number = 0;
-		while (number <= 14)
+		for (i = 0; i < 15; i++)
 		{
-			store_num = number;
-			if (number > 9)
+			store_num = i;
+			if (i > 9)
 			{
 				_putchar('1');
-				store_num = number % 10;
+				store_num = i % 10;
 			}
-			_putchar('0' + store_num);
-			number++;
+			_putchar(store_num + '0');
 		}
-
 		_putchar('\n');
-		numX10++;
+		num++;
 	}
 }
