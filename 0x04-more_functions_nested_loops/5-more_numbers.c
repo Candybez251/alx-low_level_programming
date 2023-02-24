@@ -8,7 +8,7 @@
 
 void more_numbers(void)
 {
-	char i, store_num;
+	int i, store_num;
 	int num;
 
 	num = 0;
