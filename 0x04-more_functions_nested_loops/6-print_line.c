@@ -2,7 +2,7 @@
 
 /**
  * print_line - a function that draws a straight line in the terminanl
- * @n: times straight line is printed.
+ * @n: an argument
  * Return: void
  */
 
