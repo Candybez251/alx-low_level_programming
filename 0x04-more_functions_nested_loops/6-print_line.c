@@ -3,16 +3,23 @@
 /**
  * print_line - printsstraight line n times.
  * @n: times straight line is printed.
- * Return: no return.
+ * return (0);
  */
 
 void print_line(int n)
 {
-	int i;
+	int start_p = 0;
 
-	for (i = 0; i < n ; i++)
+	while (start_p < n)
 	{
-		_putchar(95);
+		if (n > 0)
+		{
+			_putchar(' ');
+
+		}
+
+		start_p++;
 	}
+
 	_putchar("\n");
 }

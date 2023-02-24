@@ -3,7 +3,7 @@
 /**
  * more_numbers - prints numbers between 0 and 14
  * 10 times.
- * Return: 0
+ * return (0);
  */
 
 void more_numbers(void)
@@ -20,14 +20,14 @@ void more_numbers(void)
 			store_num = number;
 			if (number > 9)
 			{
-				putchar('1');
+				_putchar('1');
 				store_num = number % 10;
 			}
-			_putchar( '0' + store_num);
+			_putchar('0' + store_num);
 			number++;
 		}
 
-		putchar('\n');
+		_putchar('\n');
 		numX10++;
 	}
 }
