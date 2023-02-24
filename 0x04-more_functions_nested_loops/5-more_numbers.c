@@ -3,22 +3,31 @@
 /**
  * more_numbers - prints numbers between 0 and 14
  * 10 times.
- * Return: no returns
+ * Return: 0
  */
 
 void more_numbers(void)
 {
-	int i, ch;
+	char number, store_num;
+	int numx10;
 
-	for (i = 0; i < 10; i++)
-
+	numx10 = 0;
+	while (numx10 < 10)
 	{
-		for (ch = 0; ch < 15; ch++)
+		number = 0;
+		while (number <= 14)
 		{
-			if (ch >= 10)
-				_putchar((ch / 10) + 48);
-			_putchar((ch % 10) + 48);
+			store_num = number;
+			if (number > 9)
+			{
+				putchar('1');
+				store_num = number % 10;
+			}
+			_putchar( '0' + store_num);
+			number++;
 		}
-		_putchar('\n');
+
+		putchar('\n');
+		numX10++;
 	}
 }
