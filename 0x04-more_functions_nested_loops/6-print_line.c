@@ -1,24 +1,24 @@
 #include "main.h"
 
 /**
- * print_line - printsstraight line n times.
+ * print_line - a function that draws a straight line in the terminanl
  * @n: times straight line is printed.
- * return (0);
+ * Return: void
  */
 
 void print_line(int n)
 {
-	int start_p = 0;
+	int start_point;
 
-	while (start_p < n)
+	start_point = 0;
+	while (n > 0 && start_point < n)
 	{
 		if (n > 0)
 		{
 			_putchar('_');
 
 		}
-
-		start_p++;
+		start_point++;
 	}
 
 	_putchar("\n");
