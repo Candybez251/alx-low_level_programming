@@ -1,7 +1,7 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * main - fizz buz test
+ * main - fizz buzz test
  * Description:  a program that prints the numbers from 1 to 100..
  * Return: 0;
  */
@@ -27,7 +27,7 @@ int main(void)
 		}
 		else
 		{
-			printf("%i", i);
+			printf("%d", i);
 		}
 		if (i != 100)
 		{
