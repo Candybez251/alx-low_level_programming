@@ -13,13 +13,9 @@ void print_line(int n)
 	start_point = 0;
 	while (n > 0 && start_point < n)
 	{
-		if (n > 0)
-		{
-			_putchar('_');
-
-		}
+		_putchar('_');
 		start_point++;
 	}
 
-	_putchar("\n");
+	_putchar('\n');
 }
