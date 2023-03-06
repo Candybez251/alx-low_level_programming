@@ -1,7 +1,7 @@
 include "main.h"
 
 /**
- * _strpbrk() - the function that searches for a set of bytes
+ * *_strpbrk() - the function that searches for a set of bytes
  * @s: strings to be searched
  * @accept: strings to be checked
  * Return: \0
