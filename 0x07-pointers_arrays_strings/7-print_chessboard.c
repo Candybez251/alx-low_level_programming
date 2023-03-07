@@ -3,8 +3,9 @@
 /**
  * print_chessboard - prints chessboard
  * @a: array of elements
- * Return: 0;
+ * Return: 0
  */
+
 void print_chessboard(char (*a)[8])
 {
 	int = k;
