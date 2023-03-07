@@ -1,27 +1,36 @@
 #include "main.h"
 
 /**
- * *_strstr - a function that finds the first occurrence of the substring
- * @haystack: a string to be looked in
- * @needle: a string to look for in haystack
+ * _strstr - a function that finds the first occurrence of the substring
+ * @haystack: a string input to be looked in
+ * @needle: a string input to look for in haystack
  * Return: 0
  */
 
 char *_strstr(char *haystack, char *needle)
 {
-	for (*haystack = 0; *haystack != '\0'; *haystack++)
-	{
-		char *l = haystack;
-		char *p = needle;
+	int i;
 
-		while (*l == *p && *p != '\0')
+	if (*needle == 0)
+		return (haystack);
+
+	while (*haystack)
+	{
+		i = 0;
+
+		if (haystack[i] == needle[i])
 		{
-			l++;
-			p++;
+			do {
+				if (needle[i + 1] == '\0')
+					return (haystack);
+
+				i++;
+			}
+
+			while (haystack[i] == needle[i])
 		}
 
-		if (*p == '\0')
-			return (haystack);
+		haystack++;
 	}
-	return (0);
+	return ('\n');
 }
