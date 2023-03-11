@@ -11,14 +11,13 @@
 
 int main(int argc, char *argv[])
 {
-	int count, i;
+	int count;
 
-	i = 0;
 	if (argc == 1)
 		print("%d\n", argc - 1);
 	else
 	{
-		for (count = 0; argv[i]; count++;)
+		for (count = 0; *argv; count++;)
 			argv++;
 		printf("%d\n", count - 1);
 	}
