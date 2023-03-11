@@ -13,24 +13,34 @@
 
 int main(int argc, char *argv[])
 {
-	int i, answer = 0;
+	int i, ans, len, j;
+	char *arr;
 
 	if (argc != 3)
 	{
 		printf("0\n");
 	}
-	if (isdigit(argc) && isdigit(argv))
-	{
-		for (i = 1; i < argc; i++)
-		{
-			answer += atoi(argv[i]);
-		}
-		print ("%d\n", answer);
-	}
 	else
 	{
-		printf("Error\n");
-		return (1);
+		ans = 0;
+		for (i = 1; i < argc; i++)
+		{
+			arr = argv[i];
+			len = strlen(arr);
+
+			for (j = 0; j < len; j++)
+			{
+				if (isdigit(*(arr + j)) == 0)
+				{
+					printf("Error\n");
+					return (1);
+				}
+			}
+
+			ans += atoi(argv[i]);
+		}
+
+		printf("%d\n", ans);
 	}
 	return (0);
 }
