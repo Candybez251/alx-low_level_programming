@@ -1,5 +1,5 @@
-#include "holberton.h"
 #include <stdio.h>
+#include "main.h"
 
 /**
  * main - a program that prints its name
