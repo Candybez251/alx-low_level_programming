@@ -10,28 +10,29 @@
  * if malloc fails, then _calloc returns NULL, else return
  * pointer to the allocated memory
  */
+
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *ptr;
+	void *p;
 	unsigned int i = 0;
-	char c;
+	char *c;
 
 	if (size == 0)
 		return (NULL);
 	if (nmemb == 0)
 		return (NULL);
 
-	ptr = malloc(nmemb * size);
+	p = malloc(nmemb * size);
 
-	if (mem == NULL)
+	if (p == NULL)
 		return (NULL);
 
-	c = mem;
+	c = p;
 
 	while (i < (size * nmemb))
 	{
 		c[i] = '\0';
 		i++;
 	}
-	return (ptr);
+	return (p);
 }
