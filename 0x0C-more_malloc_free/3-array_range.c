@@ -7,22 +7,23 @@
  * @max: last array index.
  * Return: null if array fails or min > max. else arr
  */
+
 int *array_range(int min, int max)
 {
-	int *arr, i, size;
+	int *array, index, size;
 
 	if (min > max)
 		return (NULL);
 
-	a_size = max - min + 1;
+	size = max - min + 1;
 
-	arr = malloc(sizeof(int) * a_size);
+	array = malloc(sizeof(int) * size);
 
-	if (arr == NULL)
+	if (array == NULL)
 		return (NULL);
 
-	for (i = 0; i < a_size; i++)
-		arr[i] = min++;
+	for (index = 0; index < size; index++)
+		array[index] = min++;
 
-	return (arr);
+	return (array);
 }
