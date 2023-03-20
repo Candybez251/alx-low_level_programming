@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include "dog.h"
 
-char *_strcopy(char *dest, char *src);
 int _strlen(char *str);
+char *_strcopy(char *dest, char *src);
 dog_t *new_dog(char *name, float age, char *owner);
 
 /**
@@ -13,12 +13,12 @@ dog_t *new_dog(char *name, float age, char *owner);
  */
 int _strlen(char *str)
 {
-	int string_len = 0;
+	int s_len = 0;
 
 	while (*str++)
-		string_len++;
+		s_len++;
 
-	return (string_len);
+	return (s_len);
 }
 
 /**
@@ -45,7 +45,7 @@ char *_strcopy(char *dest, char *src)
  * @name: name of dog
  * @age: age of dog
  * @owner: owner of dog.
- * Return: struct dog
+ * Return: struct d
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
