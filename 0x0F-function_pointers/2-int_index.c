@@ -3,6 +3,7 @@
 /**
  * int_index - a function that searches for an integer.
  * @array: array name
+ * @size: size of array
  * @cmp: pointer to a function
  * Return: (-1)
  */
@@ -16,9 +17,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 	while (size > 0)
 	{
 		if (cmp(array[srcArr]) != 0)
-		{
 			return (srcArr);
-		}
 		srcArr++;
 		size--;
 	}
