@@ -5,18 +5,17 @@
 #include <stdlib.h>
 
 /**
- * struct linkedlist - C-Singly linked lists
+ * struct linkedlist - C-singly linked list
  * @str: string
  * @len: the size of the string
- * @next: this points to the next node
+ * @next: this variable points to the next node
  * Description: singly linked list
  */
-
 typedef struct linkedlist
 {
-	struct linkedlist *next;
-	unsigned int len;
 	char *str;
+	unsigned int len;
+	struct linkedlist *next;
 } list_t;
 
 size_t print_list(const list_t *h);
@@ -25,4 +24,4 @@ list_t *add_node(list_t **head, const char *str);
 list_t *add_node_end(list_t **head, const char *str);
 void free_list(list_t *head);
 
-#endif
+#endif /* LISTS_H */
